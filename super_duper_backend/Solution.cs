@@ -24,7 +24,20 @@ namespace SuperDuperBackend
         /// <param name="grille">Grille de sudoku renvoyé par l'utilisateur</param>
         /// <returns>true si la grille est résolue, false sinon</returns>
         public static bool CheckGrille(int[][] grille) {
-            // TODO
+
+            int somme_ligne = 0;
+            int somme_colonne = 0;
+            int somme = 0;
+            for(int i = 0; i< grille.length; i++){
+                for(int j = 0; j< grille.length; j++){
+
+                    somme_ligne += grille[i][j];
+                    somme_colonne += grille[j][i];
+
+                }
+            }
+            //Code super compliqué qui test le sudoku
+            //
             return true;
         }
     }
